@@ -21,6 +21,8 @@ set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 colorscheme codedark
+
+"Enable spell check for tex and text files and underline the missspellt
 set spell spelllang=en_gb
 autocmd Filetype text hi SpellBad cterm=underline
 autocmd Filetype tex hi SpellBad cterm=underline
