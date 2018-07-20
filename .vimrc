@@ -22,6 +22,7 @@ set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 colorscheme codedark
 
+
 "Enable spell check for tex and text files and underline the missspellt
 set spell spelllang=en_gb
 augroup spellcheckline
@@ -30,6 +31,7 @@ augroup spellcheckline
 	autocmd Filetype tex hi SpellBad cterm=underline
 	autocmd Filetype plaintex hi SpellBad cterm=underline
 augroup END
+
 
 " To adaptively toggle between relativenumber and number
 augroup numbertoggle
@@ -45,3 +47,11 @@ augroup selfhighlight
 	autocmd Filetype python highlight SELF ctermfg=blue
 	autocmd Filetype python match SELF /self/
 augroup END
+
+
+" Leader <leader>
+let mapleader=','
+
+" Open vimrc with key strokes
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
