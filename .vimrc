@@ -24,9 +24,12 @@ colorscheme codedark
 
 "Enable spell check for tex and text files and underline the missspellt
 set spell spelllang=en_gb
-autocmd Filetype text hi SpellBad cterm=underline
-autocmd Filetype tex hi SpellBad cterm=underline
-autocmd Filetype plaintex hi SpellBad cterm=underline
+augroup spellcheckline
+	autocmd!
+	autocmd Filetype text hi SpellBad cterm=underline
+	autocmd Filetype tex hi SpellBad cterm=underline
+	autocmd Filetype plaintex hi SpellBad cterm=underline
+augroup END
 
 " To adaptively toggle between relativenumber and number
 augroup numbertoggle
@@ -37,5 +40,8 @@ augroup END
 
 
 " Hilight self in python
-autocmd Filetype python highlight SELF ctermfg=blue
-autocmd Filetype python match SELF /self/
+augroup selfhighlight
+	autocmd!
+	autocmd Filetype python highlight SELF ctermfg=blue
+	autocmd Filetype python match SELF /self/
+augroup END
