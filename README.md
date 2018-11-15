@@ -1,1 +1,1 @@
-Vim and Tmux configuration.
+vim and tmux configuration.
