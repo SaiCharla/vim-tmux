@@ -33,6 +33,15 @@ augroup spellcheckline
 augroup END
 
 
+"Set wrap for latex and text files
+augroup settingwrap
+	autocmd!
+	autocmd Filetype text set wrap
+	autocmd Filetype tex set wrap
+	autocmd Filetype plaintex set wrap
+augroup END
+
+
 " To adaptively toggle between relativenumber and number
 augroup numbertoggle
   autocmd!
