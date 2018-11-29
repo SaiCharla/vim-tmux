@@ -36,9 +36,9 @@ augroup END
 "Set wrap for latex and text files
 augroup settingwrap
 	autocmd!
-	autocmd Filetype text set wrap tw=0
-	autocmd Filetype tex set wrap tw=0
-	autocmd Filetype plaintex set wrap tw=0
+	autocmd Filetype text set wrap linebreak tw=0
+	autocmd Filetype tex set wrap linebreak tw=0
+	autocmd Filetype plaintex set wrap linebreak tw=0
 augroup END
 
 
