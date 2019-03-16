@@ -21,7 +21,8 @@ set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 colorscheme codedark
-
+set t_Co=256
+set background=dark
 
 "Enable spell check for tex and text files and underline the missspellt
 set spell spelllang=en_gb
@@ -64,3 +65,5 @@ let mapleader=','
 " Open vimrc with key strokes
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+
