@@ -28,8 +28,8 @@ alias ipy="/home/Sesha/anaconda3/bin/ipython"
 alias conda="/home/Sesha/anaconda3/bin/conda"
 
 # alias for emacs
-alias ed="emacs --daemon"
-alias ec="emacsclient"
+#alias esd="emacs --daemon"
+#alias ec="emacsclient"
 
 # alias for ls
 alias lm="ls -ltr --block-size=M"
