@@ -35,3 +35,8 @@ alias conda="/home/Sesha/anaconda3/bin/conda"
 alias lm="ls -ltr --block-size=M"
 alias lk="ls -ltr --block-size=K"
 
+# alias for vimx
+alias vx="vimx"
+
+# Set vi mode in the shell
+set -o vi
