@@ -37,9 +37,9 @@ augroup END
 "Set wrap for latex and text files
 augroup settingwrap
 	autocmd!
-	autocmd Filetype text set wrap linebreak tw=0
+	" autocmd Filetype text set wrap linebreak tw=0
 	autocmd Filetype tex set wrap linebreak tw=0
-	autocmd Filetype plaintex set wrap linebreak tw=0
+	" autocmd Filetype plaintex set wrap linebreak tw=0
 augroup END
 
 
@@ -66,4 +66,10 @@ let mapleader=','
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" no intent for text and plain text
+augroup remautoindent
+	autocmd!
+	autocmd Filetype text set noautoindent
+	autocmd Filetype plaintex set noautoindent
+augroup END
 
