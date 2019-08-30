@@ -119,5 +119,3 @@ augroup remautoindent
 	autocmd Filetype plaintex set noautoindent
 augroup END
 
-" YouCompleteMe plugin
-Plugin 'valloric/youcompleteme'
