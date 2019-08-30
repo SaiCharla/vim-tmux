@@ -42,3 +42,6 @@ alias vx="vimx"
 set -o vi
 
 # export TERM="xterm-256color"
+
+alias zotero="./Zotero/Zotero_linux-x86_64/zotero"
+
