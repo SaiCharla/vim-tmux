@@ -30,6 +30,7 @@ alias conda="/home/Sesha/anaconda3/bin/conda"
 # alias for emacs
 alias ed="emacs --daemon=spacemacs_server"
 alias ec="emacsclient --socket-name=spacemacs_server"
+alias ek="emacsclient --socket-name=spacemacs_server -e '(kill-emacs)'"
 
 # alias for ls
 alias lm="ls -ltr --block-size=M"
