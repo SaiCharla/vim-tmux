@@ -1,8 +1,3 @@
-execute pathogen#infect()
-
-filetype plugin indent on
-syntax on
-
 set encoding=utf-8
 set fileencoding=utf-8
 syntax enable	" enable syntax processing
@@ -25,9 +20,10 @@ set nowrap
 set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
+
 colorscheme codedark
 set t_Co=256
-set background=dark
+set background=codedark
 
 "Enable spell check for tex and text files and underline the missspellt
 set spell spelllang=en_gb
