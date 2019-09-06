@@ -21,11 +21,11 @@ set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 
-colorscheme codedark
-set t_Co=256
-set background=codedark
+"set t_Co=256
+set background=dark
+colorscheme space-vim-dark
 
-"Enable spell check for tex and text files and underline the missspellt
+"Enable spell check for tex and text files and underline the misspelt
 set spell spelllang=en_gb
 augroup spellcheckline
 	autocmd!
