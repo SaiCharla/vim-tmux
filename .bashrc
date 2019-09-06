@@ -27,10 +27,6 @@ alias ipy="/home/Sesha/anaconda3/bin/ipython"
 # alias for conda
 alias conda="/home/Sesha/anaconda3/bin/conda"
 
-# alias for emacs
-alias ed="emacs --daemon=spacemacs_server"
-alias ec="emacsclient --socket-name=spacemacs_server"
-alias ek="emacsclient --socket-name=spacemacs_server -e '(kill-emacs)'"
 
 # alias for ls
 alias lm="ls -ltr --block-size=M"
@@ -45,4 +41,7 @@ set -o vi
 # export TERM="xterm-256color"
 
 alias zotero="./Zotero/Zotero_linux-x86_64/zotero"
+
+alias courses="cd /home/Sesha/Documents/Purdue/courses"
+alias journ="cd /home/Sesha/Documents/Journals"
 
