@@ -10,9 +10,6 @@ fi
 
 # User specific aliases and functions
 
-# Goes to the directory of the current project
-# alias crp='cd ~/Projects/ANSI_C'
-
 #Path for embedded systems compilers
 export PATH=$PATH:$HOME/Embedded/gcc-arm-none-eabi-5_4-2016q3/bin
 
@@ -40,7 +37,7 @@ set -o vi
 
 # export TERM="xterm-256color"
 
-alias zotero="./Zotero/Zotero_linux-x86_64/zotero"
+alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
 
 alias courses="cd /home/Sesha/Documents/Purdue/courses"
 alias journ="cd /home/Sesha/Documents/Journals"
