@@ -33,6 +33,7 @@ augroup spellcheckline
 	autocmd Filetype text hi SpellBad cterm=underline
 	autocmd Filetype tex hi SpellBad cterm=underline
 	autocmd Filetype plaintex hi SpellBad cterm=underline
+	autocmd Filetype org hi SpellBad cterm=underline
 augroup END
 
 
