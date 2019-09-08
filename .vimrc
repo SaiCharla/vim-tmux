@@ -25,8 +25,9 @@ autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 set background=dark
 colorscheme space-vim-dark
 
-"Enable spell check for tex and text files and underline the misspelt
-set spell spelllang=en_gb
+"Enable spell check for tex and text files and underline the misspent
+set spell spelllang=en_us
+set complete+=kspell  "auto complete with directory word when spell check is on
 augroup spellcheckline
 	autocmd!
 	autocmd Filetype text hi SpellBad cterm=underline
@@ -45,7 +46,7 @@ augroup settingwrap
 augroup END
 
 
-" To adaptively toggle between relativenumber and number
+" To adaptive-ly toggle between relative number and number
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -53,7 +54,7 @@ augroup numbertoggle
 augroup END
 
 
-" Hilight self in python
+" Hi-light self in python
 augroup selfhighlight
 	autocmd!
 	autocmd Filetype python highlight SELF ctermfg=blue
