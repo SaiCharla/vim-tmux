@@ -41,4 +41,4 @@ alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
 
 alias courses="cd /home/Sesha/Documents/Purdue/courses"
 alias journ="cd /home/Sesha/Documents/Journals"
-
+alias finc="vx /home/Sesha/Documents/Journals/Finances/Expenses.org"
