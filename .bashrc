@@ -40,5 +40,7 @@ set -o vi
 alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
 
 alias courses="cd /home/Sesha/Documents/Purdue/courses"
-alias journ="cd /home/Sesha/Documents/Journals"
+alias journ="vx /home/Sesha/Documents/Journals/journal.org"
 alias finc="vx /home/Sesha/Documents/Journals/Finances/Expenses.org"
+alias gdas="vx /home/Sesha/Documents/Journals/gdas.org"
+alias deady="vx /home/Sesha/Documents/Journals/deady.org"
