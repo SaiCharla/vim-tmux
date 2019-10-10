@@ -21,9 +21,9 @@ set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 
-"set t_Co=256
+set t_Co=256
 set background=dark
-colorscheme space-vim-dark
+colorscheme solarized8_flat
 
 "Enable spell check for tex and text files and underline the misspent
 set spell spelllang=en_us
