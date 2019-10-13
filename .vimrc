@@ -21,7 +21,7 @@ set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 
-set t_Co=256
+set t_Co=16
 set background=dark
 colorscheme solarized8_flat
 

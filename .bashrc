@@ -37,11 +37,17 @@ set -o vi
 
 # export TERM="xterm-256color"
 
-alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
+#Aliases
+alias barc="vx ~/.bashrc"
+alias upsource="source ~/.bashrc"
+alias upgrade="sudo dnf upgrade -y"
 
+alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
 alias courses="cd /home/Sesha/Documents/Purdue/courses"
 alias journ="vx /home/Sesha/Documents/Journals/journal.org"
 alias finc="vx /home/Sesha/Documents/Journals/Finances/Expenses.org"
 alias gdas="vx /home/Sesha/Documents/Journals/gdas.org"
-alias deady="vx /home/Sesha/Documents/Journals/deady.org"
+alias done_today="vx /home/Sesha/Documents/Journals/done_today.org"
 alias hwang="cd /home/Sesha/Documents/Purdue/ProfHwang"
+alias parc="cd /home/Sesha/Projects/PARC"
+alias geri="cd /home/Sesha/Documents/Purdue/geri"
