@@ -21,7 +21,7 @@ alias condainit='export PATH="/home/Sesha/anaconda3/bin:$PATH"'
 alias apy="/home/Sesha/anaconda3/bin/python"
 alias ipy="/home/Sesha/anaconda3/bin/ipython"
 alias apip="/home/Sesha/anaconda3/bin/pip"
-alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole"
+alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
 # alias for conda
 alias conda="/home/Sesha/anaconda3/bin/conda"
 
@@ -53,3 +53,4 @@ alias hwang="cd /home/Sesha/Documents/Purdue/ProfHwang"
 alias parc="cd /home/Sesha/Projects/PARC"
 alias geri="cd /home/Sesha/Documents/Purdue/geri"
 alias ctrlppl="vx /home/Sesha/Documents/Journals/controls_people.org"
+alias convos="cd /home/Sesha/Documents/Journals/convos"
