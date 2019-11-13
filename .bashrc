@@ -10,6 +10,15 @@ fi
 
 # User specific aliases and functions
 
+# for Power Line
+if [ -f `which powerline-daemon` ]; then
+  powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+  . /usr/share/powerline/bash/powerline.sh
+fi
+
+
 #Path for embedded systems compilers
 export PATH=$PATH:$HOME/Embedded/gcc-arm-none-eabi-5_4-2016q3/bin
 
@@ -44,13 +53,13 @@ alias upsource="source ~/.bashrc"
 alias upgrade="sudo dnf upgrade -y"
 
 alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
-alias courses="cd /home/Sesha/Documents/Purdue/courses"
+alias courses="cd /home/Sesha/Documents/Purdue/courses/Fall2019"
 alias journ="vx /home/Sesha/Documents/Journals/journal.org"
 alias finc="vx /home/Sesha/Documents/Journals/Finances/Expenses.org"
 alias gdas="vx /home/Sesha/Documents/Journals/gdas.org"
 alias done_today="vx /home/Sesha/Documents/Journals/done_today.org"
 alias hwang="cd /home/Sesha/Documents/Purdue/ProfHwang"
 alias parc="cd /home/Sesha/Projects/PARC"
-alias geri="cd /home/Sesha/Documents/Purdue/geri"
 alias ctrlppl="vx /home/Sesha/Documents/Journals/controls_people.org"
 alias convos="cd /home/Sesha/Documents/Journals/convos"
+alias research="cd /home/Sesha/Documents/Research"
