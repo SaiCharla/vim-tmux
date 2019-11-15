@@ -10,15 +10,6 @@ fi
 
 # User specific aliases and functions
 
-# for Power Line
-if [ -f `which powerline-daemon` ]; then
-  powerline-daemon -q
-  POWERLINE_BASH_CONTINUATION=1
-  POWERLINE_BASH_SELECT=1
-  . /usr/share/powerline/bash/powerline.sh
-fi
-
-
 #Path for embedded systems compilers
 export PATH=$PATH:$HOME/Embedded/gcc-arm-none-eabi-5_4-2016q3/bin
 
