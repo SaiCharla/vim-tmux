@@ -2,8 +2,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 syntax enable	" enable syntax processing
 set tabstop=4	" number of visual spaces per TAB
-"expandtabs in python files only
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 set autoindent
 set shiftwidth=4	" Size of indent
 set number relativenumber	" show line numbers
@@ -38,13 +36,13 @@ augroup END
 
 
 "Set wrap for latex and text files
-augroup settingwrap
-	autocmd!
+"augroup settingwrap
+"	autocmd!
 	" autocmd Filetype text set wrap linebreak tw=0
-	autocmd Filetype tex set wrap linebreak tw=0
-	autocmd Filetype org set wrap linebreak tw=0
+"	autocmd Filetype tex set wrap linebreak tw=0
+"	autocmd Filetype org set wrap linebreak tw=0
 	" autocmd Filetype plaintex set wrap linebreak tw=0
-augroup END
+"augroup END
 
 
 " To adaptive-ly toggle between relative number and number
@@ -71,10 +69,17 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " no indent for text and plain text
-augroup remautoindent
-	autocmd!
-	autocmd Filetype text set noautoindent
-	autocmd Filetype plaintex set noautoindent
-augroup END
+"augroup remautoindent
+"	autocmd!
+"	autocmd Filetype text set noautoindent
+"	autocmd Filetype plaintex set noautoindent
+"augroup END
 
+"Expand tabs for specific files
+augroup expandthetabs
+	autocmd!
+	autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+	autocmd Filetype text setlocal expandtab tabstop=4 shiftwidth=4
+	autocmd Filetype plaintex setlocal expandtab tabstop=4 shiftwidth=4
+augroup END
 
