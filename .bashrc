@@ -43,7 +43,6 @@ alias barc="vx ~/.bashrc"
 alias upsource="source ~/.bashrc"
 alias upgrade="sudo dnf upgrade -y"
 
-alias zotero="/home/Sesha/Zotero/Zotero_linux-x86_64/zotero"
 alias courses="cd /home/Sesha/Documents/Purdue/courses/Spring2020"
 alias journ="cd /home/Sesha/Documents/Journals/2020"
 alias gdas="vx /home/Sesha/Documents/Journals/gdas.org"
@@ -54,3 +53,4 @@ alias rsrch="cd /home/Sesha/Documents/Research"
 alias whtdng="cat ~/.whtdng.txt"
 alias convprbs="convos && vx problems.org"
 alias anx="vx /home/Sesha/Documents/Journals/anx.txt"
+
