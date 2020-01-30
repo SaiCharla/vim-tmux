@@ -14,16 +14,6 @@ fi
 export PATH=$PATH:$HOME/Embedded/gcc-arm-none-eabi-5_4-2016q3/bin
 
 
-# adds by Anaconda3 installer
-alias condainit='export PATH="/home/Sesha/anaconda3/bin:$PATH"'
-
-# alias for anaconda python and ipython
-alias apy="/home/Sesha/anaconda3/bin/python"
-alias ipy="/home/Sesha/anaconda3/bin/ipython"
-alias apip="/home/Sesha/anaconda3/bin/pip"
-alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
-# alias for conda
-alias conda="/home/Sesha/anaconda3/bin/conda"
 
 
 # alias for ls
@@ -54,3 +44,23 @@ alias whtdng="cat ~/.whtdng.txt"
 alias convprbs="convos && vx problems.org"
 alias anx="vx /home/Sesha/Documents/Journals/anx.txt"
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/Sesha/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/Sesha/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/Sesha/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/Sesha/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# alias for activating and deactivating conda
+alias cact="conda activate"
+alias cdct="conda deactivate"
+alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
