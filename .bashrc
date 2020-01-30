@@ -14,8 +14,6 @@ fi
 export PATH=$PATH:$HOME/Embedded/gcc-arm-none-eabi-5_4-2016q3/bin
 
 
-
-
 # alias for ls
 alias lm="ls -ltr --block-size=M"
 alias lk="ls -ltr --block-size=K"
@@ -60,7 +58,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# alias for activating and deactivating conda
-alias cact="conda activate"
-alias cdct="conda deactivate"
+#Alias for jupyter console when conda is not activated
 alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
