@@ -18,8 +18,10 @@ set nowrap
 set textwidth=79
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
-set background=dark
+set background=light
 
+"For solarised theme
+colorscheme solarized8_flat
 
 "Enable spell check for tex and text files and underline the misspent
 set spell spelllang=en_us

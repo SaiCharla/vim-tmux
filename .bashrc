@@ -58,5 +58,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#alias for conda activate
+alias cact="conda activate"
 #Alias for jupyter console when conda is not activated
 alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
+
