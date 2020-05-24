@@ -41,6 +41,9 @@ alias rsrch="cd /home/Sesha/Documents/Research"
 alias whtdng="cat ~/.whtdng.txt"
 alias convprbs="convos && vx problems.org"
 alias anx="vx /home/Sesha/Documents/Journals/anx.txt"
+alias mbd="cd /home/Sesha/Documents/Journals/MbDa && vx MbData"
+alias lnc="vx /home/Sesha/Documents/Journals/lnc/lnc.txt"
+alias rqt="python /home/Sesha/Documents/Journals/lnc/lnc.py"
 
 
 # >>> conda initialize >>>
@@ -63,3 +66,6 @@ alias cact="conda activate"
 #Alias for jupyter console when conda is not activated
 alias jupqt="/home/Sesha/anaconda3/bin/jupyter qtconsole --ConsoleWidget.font_size=15"
 
+# Run Matlab
+alias matlab="bash /home/Sesha/matlab/MATLAB/2019b/bin/matlab"
+alias nmat="matlab -nodesktop"
