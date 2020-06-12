@@ -84,3 +84,5 @@ augroup expandthetabs
 	autocmd Filetype plaintex setlocal expandtab tabstop=4 shiftwidth=4
 augroup END
 
+"YCM variable set for window closing
+let g:ycm_autoclose_preview_window_after_completion = 0

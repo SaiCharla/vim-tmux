@@ -43,7 +43,8 @@ alias convprbs="convos && vx problems.org"
 alias anx="vx /home/Sesha/Documents/Journals/anx.txt"
 alias mbd="cd /home/Sesha/Documents/Journals/MbDa && vx MbData"
 alias lnc="vx /home/Sesha/Documents/Journals/lnc/lnc.txt"
-alias rqt="python /home/Sesha/Documents/Journals/lnc/lnc.py"
+alias q="python /home/Sesha/Documents/Journals/lnc/lnc.py"
+alias profs="cd /home/Sesha/Documents/Purdue/profs"
 
 
 # >>> conda initialize >>>
