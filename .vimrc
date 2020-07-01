@@ -9,16 +9,28 @@ set ruler
 set showcmd	" show command in bottom bar
 set cursorline	" highlight current line
 filetype plugin indent on	" load filetype-specific indent files
+
 set showmatch	" highlight matching [{()}]
 set incsearch	" search as characters are entered
 set hlsearch	" highlight matches
 set ignorecase
 set smartcase
+
+" Text formatting
 set nowrap
 set textwidth=79
+set formatoptions=croql " fromat options for textwidth
+set formatoptions+=t
+
+set backspace=indent,eol,start      " backspace for dummys
 set fileformat=unix
 autocmd BufWritePre * %s/\s\+$//e	"Remove trailing white spaces.
 set background=light
+
+" Expand tab for all files
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 "For solarised theme
 colorscheme solarized8_flat
@@ -76,13 +88,13 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "	autocmd Filetype plaintex set noautoindent
 "augroup END
 
-"Expand tabs for specific files
-augroup expandthetabs
-	autocmd!
-	autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
-	autocmd Filetype text setlocal expandtab tabstop=4 shiftwidth=4
-	autocmd Filetype plaintex setlocal expandtab tabstop=4 shiftwidth=4
-augroup END
+""Expand tabs for specific files
+"augroup expandthetabs
+"	autocmd!
+"	autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+"	autocmd Filetype text setlocal expandtab tabstop=4 shiftwidth=4
+"	autocmd Filetype plaintex setlocal expandtab tabstop=4 shiftwidth=4
+"augroup END
 
 "YCM variable set for window closing
-let g:ycm_autoclose_preview_window_after_completion = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
